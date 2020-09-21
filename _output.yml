@@ -1,0 +1,19 @@
+#YAML-Konfigurationsdatei zu den Output-Formaten HTML und LaTeX/PDF
+bookdown::gitbook:
+  css: style.css
+
+bookdown::pdf_book:
+  includes:
+      in_header: preamble.tex
+  keep_tex: true
+  latex_engine: xelatex
+  citation_package: natbib
+  fontsize: 10pt
+  linestretch: 1.5
+  toc-depth: 1
+  lof: True
+  lot: True
+  bibliography: [packages.bib, papers.bib]
+  biblio-style: apalike
+  number_sections: true
+

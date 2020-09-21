@@ -1,0 +1,17 @@
+#YAML-Konfigurationsdatei zur Parametrisierung der JSON-Datenzugriffe und des Wahlkreis-Parameters
+
+#API-Zugang ueber URL zur Kandidaten-Datenquelle im JSON-Format
+#API-Zugang ueber URL zur Fragebogen-Datenquelle im JSON-Format
+param_JSON_URL:
+    JSON_URL_CANDIDATES_DATA: "URL"
+    JSON_URL_QUESTIONS_DATA: "URL"
+
+#Wahlkreis-Parameter im Format "Wahlkreis" fuer spezifischen Wahlkreis. Bspw. "Luzern".
+params_wahlkreis:
+    WAHLKREIS: "Bern"
+
+#Parteien-Selektor - Fuer alle Parteien "NA" - Fuer Auswahl Werte von party-short, bspw. "SVP, SP, FDP, CVP, Grüne, glp, BDP, EVP".
+#Umlaute/Sonderzeichen entsprechend Datenbankeintrag einsetzen. Achtung: ae --> ä, oe --> ö, ue --> ü
+param_party_selector:
+    PARTIES: "NA"
+

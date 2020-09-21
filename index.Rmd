@@ -1,0 +1,201 @@
+---
+title:  |
+    | ![](logo_smartvote.jpg){width=8cm}&nbsp;&nbsp;
+    | &nbsp;
+    | `r params$wahlbezeichnung_allg` vom `r params$wahldatum`&nbsp;
+    | &nbsp;
+
+subtitle: |
+    | &nbsp;&nbsp;
+    | &nbsp;&nbsp;
+    | smartvote
+    | CH-3000 Bern
+    | Tel. 033 534 99 15
+    | kontakt@smartvote.ch
+
+author: "Verein Politools"
+date: "`r Sys.Date()`"
+lang: de
+documentclass: report
+classoption: openany
+site: bookdown::bookdown_site
+number_sections: true
+
+params:
+    aktuelles_datum: "[Aktuelles Datum]"
+    anzahl_gueltige_stimmzettel: "[Anzahl gültige Stimmzettel]"
+    anzahl_wahlempfehlungen_alle_wahlen: "[Anzahl Wahlempfehlungen alle Wahlen]"
+    anzahl_wahlempfehlungen_parlamentswahl: "[Anzahl Wahlempfehlungen Parlamentswahl]"
+    datum_start_kandidatenzugang: "[Datum Start Kandidatenzugang]"
+    datum_start_waehlerzugang: "[Datum Start Wählerzugang]"
+    gemeindebezeichnung: "[Gemeindebezeichnung]"
+    jahr_letzte_wahl: "[Jahr letzte Wahl]"
+    kosten: "[Kosten]"
+    monat_jahr_info_an_parteien: "[Monat und Jahr Information an Parteien]"
+    monat_jahr_offertannahme: "[Monat und Jahr Offertannahme]"
+    monat_jahr_offertstellung: "[Monat und Jahr Offertstellung]"
+    optionaler_text_1: "[Optionaler Text: Die Online-Wahlhilfe gelangte nach XXXX und XXXX bereits zum X. Mal zum Einsatz.]"
+    optionaler_text_2: "[Optionaler Text: Im Vergleich zum letzten Einsatz bei den Wahlen [Jahr letzte Wahl], als [Prozentuale smartvote-Teilnahme letzte Wahl] Prozent der Kandidierenden smartvote genutzt haben, ist eine [Textauswahl: sinkende / gleichbleibende / steigende] Tendenz feststellbar.]"
+    optionaler_text_3: "[Optionaler Text falls gleichzeitig stattfindende Regierungswahlen: Von den XX gewählten Mitgliedern des XX haben XX den smartvote-Fragebogen beantwortet (XX Prozent).]"
+    optionaler_text_4: "[Optionaler Text: Davon entfielen [Anzahl Wahlempfehlungen Parlamentswahl] auf die [Wahlbezeichnung Parlament]. Gegenüber den letzten Wahlen, die von smartvote begleitet wurden, stellt dies eine Zunahme / Abnahme um XXX ausgestellte Wahlempfehlungen dar.]"
+    prozentuale_smartvote_teilnahme_letzte_Wahl: "[Prozentuale smartvote Teilnahme letzte Wahl]"
+    smartvote_nutzungsquote: "[smartvote Nutzungsquote]"
+    textauswahl_1: "[Textauswahl: unterdurchschnittlichen / durchschnittlichen / überdurchschnittlichen]"
+    wahlbezeichnung_allg: "[Wahlbezeichung Allgemein]"
+    wahlbezeichnung_parlament: "[Wahlbezeichnung Parlament]"
+    wahldatum: "[Wahldatum]"
+    wahljahr: "[Wahljahr]"
+
+---
+
+# Einleitung
+Der Einsatz der Online-Wahlhilfe smartvote (www.smartvote.ch) bei den Wahlen vom <!-- [Wahldatum] -->`r params$wahldatum` wurde durch die <!-- [Gemeindebezeichnung] -->`r params$gemeindebezeichnung` finanziert. Aufgrund dieses Engagements konnten die Dienstleistungen von smartvote den Parteien und den Wahlberechtigten zur Verfügung gestellt werden. <!-- [Optionaler Text 1] -->`r params$optionaler_text_1`
+
+Die Online-Wahlhilfe smartvote ist ein Projekt des Vereins Politools (www.politools.net) mit Sitz in Bern. Politools ist nicht gewinnorientiert und politisch unabhängig. Das smartvote-Projektteam setzt sich aus Expertinnen und Experten unterschiedlicher Fachrichtungen zusammen. Das Team steht für eine wissenschaftlich sorgfältige und qualitativ hochstehende Umsetzung der Online-Wahlhilfe.
+
+Smartvote erfüllt zudem die Qualitätsstandards der Lausanner Deklaration über Online-Wahlhilfen von 2013 und arbeitet eng mit Schweizer Universitäten, Fachhochschulen und Forschungsprojekten zusammen. Institutionell ist das Projekt am Kompetenzzentrum für Public Management (KPM) der Universität Bern angegliedert. Für den Betrieb der Website und die konkreten Inhalte im Zusammenhang mit bestimmten Wahlen ist jedoch allein der Verein Politools verantwortlich.
+
+Der vorliegende Bericht fasst die Eckwerte des Wahlhilfe-Projekts in der <!-- [Gemeindebezeichnung] -->`r params$gemeindebezeichnung` <!-- [Wahljahr] -->`r params$wahljahr` zusammen. Er basiert dabei vor allem auf Informationen aus den Datenbanken von smartvote und auf den offiziellen Wahlstatistiken.
+
+# Projektziele
+Die Online-Wahlhilfe smartvote bietet den Wählerinnen und Wählern eine auf Sachthemen ausgerichtete Orientierungshilfe, damit die Wahlentscheidung auf einer verbesserten Informationsgrundlage getroffen werden kann.
+
+Gerade für junge Wählerinnen und Wähler oder für Wahlberechtigte, welche die Politik nicht täglich mitverfolgen, ist es nicht immer einfach, den Überblick über die politischen Positionen der Kandidierenden zu bewahren. Die Online-Wahlhilfe schafft diesbezüglich Transparenz und bietet den Wählerinnen und Wählern eine Möglichkeit, aus der Vielzahl von Listen und Kandidierenden diejenigen auszuwählen, die ihren politischen Präferenzen am besten entsprechen.
+
+In diesem Zusammenhang ist das Projektteam bemüht, im Rahmen der Ausarbeitung des Fragebogens darauf zu achten, dass dieser einen Fokus auf lokale und regionale Fragen aufweist und dass eine möglichst breite Abdeckung von Themenbereichen erreicht wird, welche für die betreffende Wahl von politischem Interesse sind.
+
+# Ablauf des Projektes
+Im <!-- [Monat Jahr Offertstellung] -->`r params$monat_jahr_offertstellung` unterbreiteten die Betreiber der Online-Wahlhilfe smartvote der <!-- [Gemeindebezeichnung] -->`r params$gemeindebezeichnung` eine Offerte im Hinblick auf die Wahlen vom <!-- [Wahldatum] -->`r params$wahldatum`. Im <!-- [Monat Jahr Offertannahme] -->`r params$monat_jahr_offertannahme` erklärte sich die <!-- [Gemeindebezeichnung] -->`r params$gemeindebezeichnung` bereit, die anfallenden Kosten von CHF <!-- [Kosten] -->`r params$kosten` zzgl. MWST für die Realisierung des Projekts zu übernehmen.
+
+In der Folge bestand eine enge und gute Zusammenarbeit mit den Vertretern der <!-- [Gemeindebezeichnung] -->`r params$gemeindebezeichnung` sowie den lokalen Parteien. Im <!-- [Monat Jahr Info an Parteien] -->`r params$monat_jahr_info_an_parteien` wurden alle Stadtparteien über die Anmeldung der Kandidierenden und die Einreichung von Themenvorschlägen für den smartvote-Fragebogen informiert. Somit stand allen Parteien die Möglichkeit offen, bei den smartvote-Betreibern Themenvorschläge für den Fragebogen einzureichen. Aus Gründen der politischen Unabhängigkeit oblag die Erarbeitung der definitiven Fassung des Fragebogens jedoch allein den Wahlhilfe-Betreibern.
+
+Nach Erhalt der notwendigen Informationen zu den einzelnen Kandidierenden wurden ab dem <!-- [Datum Start Kandidatenzugang] -->`r params$datum_start_kandidatenzugang` die Login-Daten zum smartvote-Benutzerkonto den Kandidierenden zugestellt. Am <!-- [Datum Start Wähler] -->`r params$datum_start_waehler` wurde die Webseite für die Wahlberechtigten aufgeschaltet. Bis zum Wahltag am <!-- [Wahldatum] -->`r params$wahldatum` blieb somit genügend Zeit, um sich mit den Positionen der Kandidierenden und Parteien intensiv zu befassen. Negative Feedbacks auf den smartvote-Fragebogen und den Einsatz der Online-Wahlhilfe insgesamt sind uns nicht bekannt. Insgesamt kann der gesamte Projektablauf aus der Sicht der smartvote-Betreiber als sehr zufriedenstellend bezeichnet werden.
+
+# Beteiligung der Kandidierenden
+```{r, results='hide', echo=FALSE, message=FALSE, warning=FALSE, comment=NA, code = readLines("smartvote-00031-script-anzahl_kandidierende.R")} 
+```
+
+```{r, results='hide', echo=FALSE, message=FALSE, warning=FALSE, comment=NA, code = readLines("smartvote-00032-script-anzahl_kandidierende_confirmed.R")}
+```
+
+```{r, results='hide', echo=FALSE, message=FALSE, warning=FALSE, comment=NA, code = readLines("smartvote-00033-script-anzahl_kandidierende_confirmed_perc.R")}
+```
+
+```{r, results='asis', echo=FALSE, message=FALSE, warning=FALSE, comment=NA}
+print_00031 <- final_result_00031
+print_00032 <- final_result_00032
+print_00033 <- final_result_00033
+cat(paste0("Von den insgesamt ", print_00031, " Kandidierenden bei den ", params$wahlbezeichnung_parlament, " haben ", print_00032, " ein smartvote-Profil erstellt. Die Teilnahmequote beträgt somit ", print_00033, ", was im Vergleich zu anderen Einsätzen der Wahlhilfe einen ", params$textauswahl_1, " Wert darstellt."))
+```
+
+<!-- [Optionaler Text 2] -->`r params$optionaler_text_2` Weitere Details finden sich in der Abbildung 1. <!-- [Optionaler Text 3] -->`r params$optionaler_text_3`
+
+Abbildung 1: smartvote-Beteiligung der Kandidierenden bei den <!-- [Wahlbezeichnung Parlament] -->`r params$wahlbezeichnung_parlament` nach Listen.
+\hfill\break
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, results='asis', booktabs = TRUE, code = readLines("smartvote-00035-script-anzahl_liste.R")}
+```
+
+Weitere Auswertungen zur Beteiligung der Kandidierenden finden sich im Anhang dieses Berichts.
+
+# Nutzung durch Wählerinnen und Wähler
+Insgesamt wurden bei den <!-- [Wahlbezeichnung allg.] -->`r params$wahlbezeichnung_allg` <!-- [Anzahl Wahlempfehlungen alle Wahlen] -->`r params$anzahl_wahlempfehlungen_alle_wahlen` smartvote-Wahlempfehlungen ausgestellt. <!-- [Optionaler Text 4] -->`r params$optionaler_text_4`
+
+Bei den <!-- [Wahlbezeichnung Parlament] -->`r params$wahlbezeichnung_parlament` kamen auf <!-- [Anzahl gültige Stimmzettel] -->`r params$anzahl_gueltige_stimmzettel` gültig eingegangene Stimmzettel <!-- [Anzahl Wahlempfehlungen Parlamentswahl] -->`r params$anzahl_wahlempfehlungen_parlamentswahl` bei smartvote ausgestellte Wahlempfehlungen – dies würde unter den effektiven Wahlteilnehmer/-innen einer smartvote-Nutzungsquote von rund <!-- [smartvote-Nutzungsquote] -->`r params$smartvote_nutzungsquote`% entsprechen.
+
+Diese Zahl kann allerdings nur als ungefähre Richtschnur dienen, da diese Berechnung auch Mehrfachnutzerinnen und -nutzer beinhaltet. Die Forschung konnte im Rahmen von eidgenössischen Wahlen aufzeigen, dass gemäss neustem Stand rund 20% der Wahlteilnehmer/-innen die Online-Wahlhilfe smartvote nutzen. Diese Zahl wird auch auf kommunaler Ebene regelmässig erreicht und dürfte sich auch in der [Gemeindebezeichnung] auf diesem Niveau bewegen.
+
+# Anhang: Detaillierte Auswertungen
+
+## Merkmale der Kandidierenden
+
+### Alter
+```{r, results='hide', echo=FALSE, message=FALSE, warning=FALSE, comment=NA, code = readLines("smartvote-00011-script-durchschnittsalter_alle_kand.R")}
+```
+
+```{r, results='hide', echo=FALSE, message=FALSE, warning=FALSE, comment=NA, code = readLines("smartvote-00012-script-durchschnittsalter_elected_kand.R")}
+```
+
+```{r, results='asis', echo=FALSE, message=FALSE, warning=FALSE, comment=NA}
+print_00011 <- final_result_00011
+cat(paste0("Das Durchschnittsalter der Kandidierenden beträgt ", print_00011, " Jahre."))
+```
+
+```{r, results='asis', echo=FALSE, message=FALSE, warning=FALSE, comment=NA}
+print_00012 <- final_result_00012
+cat(paste0("Das Durchschnittsalter der Gewählten beträgt ", print_00012, " Jahre."))
+```
+
+\hfill\break
+In der folgenden Grafik ist die Altersverteilung der Kandidierenden dargestellt:
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.align='center', code = readLines("smartvote-00013-script_altersverteilung_kand.R")}
+```
+
+### Geschlecht
+In der folgenden Grafik ist die Verteilung der Kandidierenden nach Geschlecht dargestellt:
+```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.align='center', fig.height= 3, code = readLines("smartvote-00021-script-geschlechterverteilung_kand.R")}
+```
+
+## smartvote-Beteiligung der Kandidierenden
+```{r, results='hide', echo=FALSE, message=FALSE, warning=FALSE, comment=NA, code = readLines("smartvote-00031-script-anzahl_kandidierende.R")} 
+```
+
+```{r, results='asis', echo=FALSE, message=FALSE, warning=FALSE, comment=NA}
+print_00031 <- final_result_00031
+cat(paste0("Insgesamt haben sich ", print_00031, " Kandidierende zur Wahl gestellt."))
+```
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.align='center', code = readLines("smartvote-00034-script-anzahl_vis.R")}
+```
+
+### Kandidierende nach Partei
+```{r, echo=FALSE, message=FALSE, warning=FALSE, results='asis', booktabs = TRUE, code = readLines("smartvote-00036-script-anzahl_partei.R")}
+```
+
+\hfill\break
+
+### Kandidierende nach Wahlkreis
+```{r, echo=FALSE, message=FALSE, warning=FALSE, results='asis', booktabs = TRUE, code = readLines("smartvote-00037-script-anzahl_wahlkreis.R")}
+```
+
+\pagebreak
+
+## smartvote-Profile der Kandidierenden
+
+### Antworten auf die smartvote-Fragen
+```{r, echo=FALSE, message=FALSE, warning=FALSE, results='asis', fig.align='center', code = readLines("smartvote-00041-script-antwortverteilung_alle_kand_standard-4.R")}
+```
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, results='asis', fig.align='center', code = readLines("smartvote-00042-script-antwortverteilung_gewaehlte_kand_standard-4.R")}
+```
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, results='asis', fig.align='center', code = readLines("smartvote-00043-script-antwortverteilung_alle_kand_standard-4.R")}
+```
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, results='asis', fig.align='center', code = readLines("smartvote-00044-script-antwortverteilung_gewaehlte_kand_standard-4.R")}
+```
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, results='asis', fig.align='center', code = readLines("smartvote-00045-script-antwortverteilung_alle_kand_budget-5.R")}
+```
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, results='asis', fig.align='center', code = readLines("smartvote-00046-script-antwortverteilung_gewaehlte_kand_budget-5.R")}
+```
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, results='asis', fig.align='center', code = readLines("smartvote-00047-script-antwortverteilung_alle_kand_budget-5.R")}
+```
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, results='asis', fig.align='center', code = readLines("smartvote-00048-script-antwortverteilung_gewaehlte_kand_budget-5.R")}
+```
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, results='asis', fig.align='center', code = readLines("smartvote-00049-script-antwortverteilung_alle_kand_slider-7.R")}
+```
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, results='asis', fig.align='center', code = readLines("smartvote-00050-script-antwortverteilung_gewaehlte_kand_slider-7.R")}
+```
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, results='asis', fig.align='center', code = readLines("smartvote-00051-script-antwortverteilung_alle_kand_slider-7.R")}
+```
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, results='asis', fig.align='center', code = readLines("smartvote-00052-script-antwortverteilung_gewaehlte_kand_slider-7.R")}
+```

@@ -1,0 +1,54 @@
+/* CSS-Datei zur Formatierung der HTML-Ausgabe */
+p.caption {
+  color: #777;
+  margin-top: 10px;
+}
+
+p code {
+  white-space: inherit;
+}
+
+pre {
+  word-break: normal;
+  word-wrap: normal;
+}
+
+pre code {
+  white-space: inherit;
+}
+
+table {
+  font-size: 13px;
+}
+
+.table {
+  font-size: 13px;
+}
+
+#table {
+  font-size: 13px;
+}
+
+td { 
+  font-size: 13px
+}
+
+th { 
+  font-size: 13px
+}
+
+img {
+	padding-top: 25px;
+	padding-bottom: 35px;
+}
+
+.img {
+	padding-top: 25px;
+	padding-bottom: 35px;
+}
+
+#img {
+	padding-top: 25px;
+	padding-bottom: 35px;
+}
+

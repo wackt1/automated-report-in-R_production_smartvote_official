@@ -1,0 +1,6 @@
+#YAML-Konfigurationsdatei fuer ein Buch in bookdown
+book_filename: "BT_Bookdown_Project"
+delete_merged_file: true
+new_session: true
+number_sections: true
+
